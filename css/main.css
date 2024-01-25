@@ -1,0 +1,328 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --background-color: #f5f5f5;
+  --default-color: #0078ff;
+  --bs-border-width: 1px;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none !important;
+}
+ul {
+  list-style: none !important;
+}
+.title-color {
+  color: var(--secondary-color);
+}
+nav {
+  background-color: #040404dc;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.web {
+  color: var(--default-color);
+}
+
+.arrow a {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0078ff;
+  color: #fff !important;
+}
+.arrow {
+  z-index: 99 !important;
+
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+.brdr {
+  height: 4px;
+  width: 100px;
+  background-color: #0078ff;
+}
+
+/* ---------------home------------ */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/hero-bg.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#home .caption h1 {
+  display: block;
+  font-size: 4rem;
+  color: var(--primary-color);
+}
+#home .caption h4 {
+  display: block;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+/* -----------about------------ */
+.color {
+  background-color: RGB(255, 255, 255);
+  box-shadow: 0px 0px 5px 0px #00000045;
+  border: 1px solid #00000010;
+  color: RGB(78, 78, 78);
+}
+
+#about {
+  background-color: var(--background-color);
+}
+#about .image img {
+  border: 1px solid #00000029;
+  border-radius: 10px;
+}
+#about a {
+  color: RGB(78, 78, 78);
+}
+.section-skills h5 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* =====================Start-Services=============== */
+
+#sevices {
+  background-color: var(--background-color);
+  text-align: center;
+}
+#sevices .service-item {
+  background-color: #fff;
+
+  border-radius: 1.3rem !important;
+  margin-bottom: 3rem;
+  text-align: center;
+  display: block;
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1) !important;
+  transition: 0.5s all;
+}
+.service-item:hover i {
+  color: #fff;
+}
+
+#sevices .service-item:hover .card-icon {
+  background-color: var(--default-color);
+  box-shadow: 0 0 0 10px #0077ff3b;
+}
+#sevices .card-icon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.55;
+  font-size: 2rem;
+  box-shadow: 0 0 0 10px var(--default-color);
+  transition: 0.5s all;
+}
+#sevices h2 {
+  font-size: 3rem;
+}
+
+/* =========================Start-Counter==================== */
+
+#counter {
+  background-image: url(../images/counters-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#counter .row {
+  background-color: #0077ffc4;
+  min-height: 450px;
+  margin: 1px;
+}
+
+#counter .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #ffffffbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#counter .icon i {
+  font-size: 32px;
+  color: #ffffffc3;
+}
+#counter p {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* ======================Start-Portofolio================== */
+#work {
+  background-color: var(--background-color);
+}
+#work h2 {
+  font-size: 35px;
+}
+#work .work-box {
+  background-color: #fff;
+
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.2);
+  transition: 1s all;
+}
+#work .w-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+.work-img img {
+  transition: 1s all;
+}
+.work-img {
+  overflow: hidden;
+}
+.work-box {
+  overflow: hidden;
+
+  transition: 0.5s all;
+}
+
+.work-box:hover .work-img img {
+  transform: scale(1.3);
+}
+
+/* ========================Start-Slider==================== */
+.slider {
+  background-image: url(../images/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: 100% 100%;
+
+  position: relative;
+}
+.overly {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  background-color: #0077ff88;
+}
+.carousel-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* ======================Start-blog======================= */
+#blog {
+  background-color: var(--background-color);
+}
+#blog .foot-img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+#blog a {
+  transition: 0.5s all;
+}
+#blog a:hover {
+  color: #0078ff !important;
+}
+#blog span {
+  transition: 0.5s all;
+}
+#blog span:hover {
+  color: #0078ff !important;
+}
+#blog .title {
+  padding: 5px 5px;
+  height: 30px;
+  background-color: #0078ff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 70%);
+  border-radius: 5px;
+  color: #fff;
+}
+#blog .title h5 {
+  font-size: 15px !important;
+  font-weight: 400;
+}
+/* =====================contact================ */
+#contact {
+  background-image: url(../images/overlay-bg.jpg);
+  background-position: center center;
+  background-size: 100% 100%;
+  position: relative;
+  background-attachment: fixed;
+}
+
+#contact form input {
+  padding-left: 8 px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 12px;
+  border: 1px solid #00000045;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #00000045;
+}
+
+.icon-list ul a {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  border: 4px solid #0078ff;
+  font-size: 20px;
+  transition: 0.5s all;
+}
+.list-info li {
+  line-height: 32px;
+}
+.icon-list ul a:hover {
+  color: #fff;
+  background-color: #0078ff;
+}
+#contact form input:focus,
+#contact form textarea:focus {
+  outline: none;
+  border-color: #122bce;
+  box-shadow: 0 0 0 2px #0077ff97;
+}
+#footer {
+  background-color: #0062d3;
+}
